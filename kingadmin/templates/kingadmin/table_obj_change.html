@@ -1,0 +1,19 @@
+{% extends 'kingadmin/index.html' %}
+{% load kingadmin_tags %}
+{#使用标签模板第一步：把文件名包含进来#}
+
+{% block right-content-container %}
+    <ol class="breadcrumb">
+        <li><a href="/kingadmin">Home</a></li>
+        <li><a href="/kingadmin/{{ app_name }}">{{ app_name }}</a></li>
+        <li><a href="/kingadmin/{{ app_name }}/{{ model_name }}">{% get_model_verbose_name admin_class %}</a></li>
+        <li class="active">{{ form_obj.instance }}</li>
+    </ol>
+
+<h2 class="page-header">{% get_model_name admin_class %}</h2>
+<h4>修改{{ form_obj.instance }}数据</h4>
+
+{% include 'kingadmin/table_obj_change_component.html' %}
+
+{% endblock %}
+
