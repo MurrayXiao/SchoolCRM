@@ -14,12 +14,16 @@
 
 
 
+
 使用配置：
 python3.6+
 Django version 2.1.4+
 
 
+
 使用方法：
 python manage.py runserver 127.0.0.0.1:8000
+
 登录页面：/kingadmin/login.html
+
 username: root@163.com password: rootroot
