@@ -6,11 +6,14 @@
 实现了动态菜单管理，用户页面上显示的菜单都是动态生成的
 其中kingadmin模块，实现了类似django admin的功能，且很多地方做了优化，可以实现通用的增删改查功能。
 
-基本使用
-requirements
+
+
+使用配置：
 python3.6+
 Django version 2.1.4+
-使用
+
+
+使用方法：
 python manage.py runserver 127.0.0.0.1:8000
 登录页面：/kingadmin/login.html
 username: root@163.com password: rootroot
